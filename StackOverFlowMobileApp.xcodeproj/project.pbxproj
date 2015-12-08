@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		307C82FA1C16383C00C9B6A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C82F91C16383C00C9B6A6 /* main.m */; };
 		307C82FD1C16383C00C9B6A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C82FC1C16383C00C9B6A6 /* AppDelegate.m */; };
-		307C83001C16383C00C9B6A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C82FF1C16383C00C9B6A6 /* ViewController.m */; };
 		307C83031C16383C00C9B6A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307C83011C16383C00C9B6A6 /* Main.storyboard */; };
 		307C83051C16383C00C9B6A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307C83041C16383C00C9B6A6 /* Assets.xcassets */; };
 		307C83081C16383C00C9B6A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307C83061C16383C00C9B6A6 /* LaunchScreen.storyboard */; };
+		307C83111C1638D900C9B6A6 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C83101C1638D900C9B6A6 /* ContainerViewController.m */; };
+		307C83171C1639D800C9B6A6 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C83161C1639D800C9B6A6 /* MenuTableViewController.m */; };
+		307C831A1C163CF700C9B6A6 /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C83191C163CF700C9B6A6 /* SearchQuestionsViewController.m */; };
+		307C831D1C163D0900C9B6A6 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C831C1C163D0900C9B6A6 /* MyQuestionsViewController.m */; };
+		307C83201C163D1F00C9B6A6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C831F1C163D1F00C9B6A6 /* ProfileViewController.m */; };
+		307C83231C16613700C9B6A6 /* burgerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 307C83221C16613700C9B6A6 /* burgerMenu.png */; };
+		307C83261C16992E00C9B6A6 /* OAuthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C83251C16992E00C9B6A6 /* OAuthWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +26,23 @@
 		307C82F91C16383C00C9B6A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		307C82FB1C16383C00C9B6A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		307C82FC1C16383C00C9B6A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		307C82FE1C16383C00C9B6A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		307C82FF1C16383C00C9B6A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		307C83021C16383C00C9B6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		307C83041C16383C00C9B6A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307C83071C16383C00C9B6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		307C83091C16383C00C9B6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307C830F1C1638D900C9B6A6 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		307C83101C1638D900C9B6A6 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		307C83151C1639D800C9B6A6 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		307C83161C1639D800C9B6A6 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		307C83181C163CF700C9B6A6 /* SearchQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchQuestionsViewController.h; sourceTree = "<group>"; };
+		307C83191C163CF700C9B6A6 /* SearchQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchQuestionsViewController.m; sourceTree = "<group>"; };
+		307C831B1C163D0900C9B6A6 /* MyQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQuestionsViewController.h; sourceTree = "<group>"; };
+		307C831C1C163D0900C9B6A6 /* MyQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQuestionsViewController.m; sourceTree = "<group>"; };
+		307C831E1C163D1F00C9B6A6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		307C831F1C163D1F00C9B6A6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		307C83221C16613700C9B6A6 /* burgerMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgerMenu.png; sourceTree = "<group>"; };
+		307C83241C16992E00C9B6A6 /* OAuthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthWebViewController.h; sourceTree = "<group>"; };
+		307C83251C16992E00C9B6A6 /* OAuthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +77,8 @@
 			children = (
 				307C82FB1C16383C00C9B6A6 /* AppDelegate.h */,
 				307C82FC1C16383C00C9B6A6 /* AppDelegate.m */,
-				307C82FE1C16383C00C9B6A6 /* ViewController.h */,
-				307C82FF1C16383C00C9B6A6 /* ViewController.m */,
 				307C83011C16383C00C9B6A6 /* Main.storyboard */,
-				307C83041C16383C00C9B6A6 /* Assets.xcassets */,
-				307C83061C16383C00C9B6A6 /* LaunchScreen.storyboard */,
-				307C83091C16383C00C9B6A6 /* Info.plist */,
+				307C83211C163D3C00C9B6A6 /* Controller */,
 				307C82F81C16383C00C9B6A6 /* Supporting Files */,
 			);
 			path = StackOverFlowMobileApp;
@@ -74,9 +87,32 @@
 		307C82F81C16383C00C9B6A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				307C83041C16383C00C9B6A6 /* Assets.xcassets */,
+				307C83221C16613700C9B6A6 /* burgerMenu.png */,
+				307C83061C16383C00C9B6A6 /* LaunchScreen.storyboard */,
+				307C83091C16383C00C9B6A6 /* Info.plist */,
 				307C82F91C16383C00C9B6A6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		307C83211C163D3C00C9B6A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				307C830F1C1638D900C9B6A6 /* ContainerViewController.h */,
+				307C83101C1638D900C9B6A6 /* ContainerViewController.m */,
+				307C83151C1639D800C9B6A6 /* MenuTableViewController.h */,
+				307C83161C1639D800C9B6A6 /* MenuTableViewController.m */,
+				307C83181C163CF700C9B6A6 /* SearchQuestionsViewController.h */,
+				307C83191C163CF700C9B6A6 /* SearchQuestionsViewController.m */,
+				307C831B1C163D0900C9B6A6 /* MyQuestionsViewController.h */,
+				307C831C1C163D0900C9B6A6 /* MyQuestionsViewController.m */,
+				307C831E1C163D1F00C9B6A6 /* ProfileViewController.h */,
+				307C831F1C163D1F00C9B6A6 /* ProfileViewController.m */,
+				307C83241C16992E00C9B6A6 /* OAuthWebViewController.h */,
+				307C83251C16992E00C9B6A6 /* OAuthWebViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				307C83081C16383C00C9B6A6 /* LaunchScreen.storyboard in Resources */,
+				307C83231C16613700C9B6A6 /* burgerMenu.png in Resources */,
 				307C83051C16383C00C9B6A6 /* Assets.xcassets in Resources */,
 				307C83031C16383C00C9B6A6 /* Main.storyboard in Resources */,
 			);
@@ -150,8 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307C83001C16383C00C9B6A6 /* ViewController.m in Sources */,
+				307C831A1C163CF700C9B6A6 /* SearchQuestionsViewController.m in Sources */,
+				307C83261C16992E00C9B6A6 /* OAuthWebViewController.m in Sources */,
+				307C83171C1639D800C9B6A6 /* MenuTableViewController.m in Sources */,
+				307C831D1C163D0900C9B6A6 /* MyQuestionsViewController.m in Sources */,
 				307C82FD1C16383C00C9B6A6 /* AppDelegate.m in Sources */,
+				307C83201C163D1F00C9B6A6 /* ProfileViewController.m in Sources */,
+				307C83111C1638D900C9B6A6 /* ContainerViewController.m in Sources */,
 				307C82FA1C16383C00C9B6A6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

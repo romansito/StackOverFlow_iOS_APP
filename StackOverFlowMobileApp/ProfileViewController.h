@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ProfileViewController.h
 //  StackOverFlowMobileApp
 //
 //  Created by Roman Salazar Lopez on 12/7/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ProfileViewController : UIViewController
 
 @end
-
