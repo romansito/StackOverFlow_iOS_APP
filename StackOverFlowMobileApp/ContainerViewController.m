@@ -27,7 +27,7 @@ NSTimeInterval const kTimeToSlideMenuOpen = 0.2;
 @property (strong, nonatomic) ProfileViewController *profileViewController;
 @property (strong, nonatomic) UIButton *burgerButton;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGesture;
-@property (strong,nonatomic) NSArray *viewControllers;
+@property (strong, nonatomic) NSArray *viewControllers;
 
 
 @end
@@ -78,25 +78,25 @@ NSTimeInterval const kTimeToSlideMenuOpen = 0.2;
 	[searchQuestionsVC didMoveToParentViewController:self];
 	self.searchQuestionsViewController = searchQuestionsVC;
 	
-	// My Questions View Controller
+//	// My Questions View Controller
 	MyQuestionsViewController *myQuestionsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"myQuestionViewController"];
-	
+//
 	[self addChildViewController:myQuestionsVC];
 	myQuestionsVC.view.frame = self.view.frame;
-	
-	[self.view addSubview:myQuestionsVC.view];
-	[myQuestionsVC didMoveToParentViewController:self];
+//
+//	[self.view addSubview:myQuestionsVC.view];
+//	[myQuestionsVC didMoveToParentViewController:self];
 	self.myQuestionsViewController = myQuestionsVC;
-	
-	// Profile View Controller
+//
+//	// Profile View Controller
 	ProfileViewController *profileVC = [self.storyboard
 		instantiateViewControllerWithIdentifier:@"profileViewController"];
-	
+//
 	[self addChildViewController:profileVC];
 	profileVC.view.frame = self.view.frame;
-	
-	[self.view addSubview:profileVC.view];
-	[profileVC didMoveToParentViewController:self];
+//
+//	[self.view addSubview:profileVC.view];
+//	[profileVC didMoveToParentViewController:self];
 	self.profileViewController = profileVC;
 	
 }
@@ -185,7 +185,9 @@ NSTimeInterval const kTimeToSlideMenuOpen = 0.2;
 {
 	[UIView animateWithDuration:kTimeToSlideMenuOpen animations:^{
 		self.searchQuestionsViewController.view.frame = CGRectMake(self.view.frame.size.width, self.searchQuestionsViewController.view.frame.origin.y, self.searchQuestionsViewController.view.frame.size.width, self.searchQuestionsViewController.view.frame.size.height);
-	} completion:^(BOOL finished) {
+		
+		} completion:^(BOOL finished) {
+		
 		CGRect oldFrame = self.searchQuestionsViewController.view.frame;
 		[self.searchQuestionsViewController willMoveToParentViewController:nil];
 		[self.searchQuestionsViewController.view removeFromSuperview];
@@ -219,6 +221,7 @@ NSTimeInterval const kTimeToSlideMenuOpen = 0.2;
 	if (![viewController isEqual:self.searchQuestionsViewController]) {
 		[self switchViewControllers:viewController];
 	}
+	
 }
 
 
