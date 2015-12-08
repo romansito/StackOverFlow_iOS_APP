@@ -19,6 +19,7 @@
 		307C83201C163D1F00C9B6A6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C831F1C163D1F00C9B6A6 /* ProfileViewController.m */; };
 		307C83231C16613700C9B6A6 /* burgerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 307C83221C16613700C9B6A6 /* burgerMenu.png */; };
 		307C83261C16992E00C9B6A6 /* OAuthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C83251C16992E00C9B6A6 /* OAuthWebViewController.m */; };
+		9D726703953EA06394D86EDF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 969C1FE2FE4DC6A853F484AF /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,9 @@
 		307C83221C16613700C9B6A6 /* burgerMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgerMenu.png; sourceTree = "<group>"; };
 		307C83241C16992E00C9B6A6 /* OAuthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthWebViewController.h; sourceTree = "<group>"; };
 		307C83251C16992E00C9B6A6 /* OAuthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthWebViewController.m; sourceTree = "<group>"; };
+		969C1FE2FE4DC6A853F484AF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACD07C373412ECE78FC66DE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B8517E8B6C8A5461304700B1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +54,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D726703953EA06394D86EDF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290307FDFBBDD703F6769AFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AACD07C373412ECE78FC66DE /* Pods.debug.xcconfig */,
+				B8517E8B6C8A5461304700B1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		307C82EC1C16383C00C9B6A6 = {
 			isa = PBXGroup;
 			children = (
 				307C82F71C16383C00C9B6A6 /* StackOverFlowMobileApp */,
 				307C82F61C16383C00C9B6A6 /* Products */,
+				290307FDFBBDD703F6769AFB /* Pods */,
+				5E433952B0D129A10EE2C77B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +131,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		5E433952B0D129A10EE2C77B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				969C1FE2FE4DC6A853F484AF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 307C830C1C16383C00C9B6A6 /* Build configuration list for PBXNativeTarget "StackOverFlowMobileApp" */;
 			buildPhases = (
+				6D35FF26EEC323E41B036D4F /* Check Pods Manifest.lock */,
 				307C82F11C16383C00C9B6A6 /* Sources */,
 				307C82F21C16383C00C9B6A6 /* Frameworks */,
 				307C82F31C16383C00C9B6A6 /* Resources */,
+				C9762B7358A17339E9CE73C2 /* Embed Pods Frameworks */,
+				5D8BC53C71F521267DF49305 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +208,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D8BC53C71F521267DF49305 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D35FF26EEC323E41B036D4F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9762B7358A17339E9CE73C2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		307C82F11C16383C00C9B6A6 /* Sources */ = {
@@ -302,6 +377,7 @@
 		};
 		307C830D1C16383C00C9B6A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACD07C373412ECE78FC66DE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackOverFlowMobileApp/Info.plist;
@@ -313,6 +389,7 @@
 		};
 		307C830E1C16383C00C9B6A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8517E8B6C8A5461304700B1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackOverFlowMobileApp/Info.plist;
@@ -341,6 +418,7 @@
 				307C830E1C16383C00C9B6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
