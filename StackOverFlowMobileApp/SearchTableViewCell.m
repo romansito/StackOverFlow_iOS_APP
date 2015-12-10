@@ -8,6 +8,7 @@
 
 #import "SearchTableViewCell.h"
 #import "Question.h"
+#import "ImageFetchService.h"
 
 
 @interface SearchTableViewCell()
@@ -27,6 +28,15 @@
 {
 	self.userName.text = question.owner.display_name;
 	self.titleLabel.text = question.title;
+	[ImageFetchService fetchImageWithURL:question.owner.profile_image completionHandler:^(UIImage * _Nullable data, NSError * _Nullable error) {
+		
+		if (error) {
+			
+		}
+		[self.imageView setImage:data];
+	}];
+	
+
 }
 
 - (void)awakeFromNib {

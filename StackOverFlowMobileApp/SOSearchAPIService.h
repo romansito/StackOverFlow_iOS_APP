@@ -10,5 +10,10 @@
 #import "Constants.h"
 
 @interface SOSearchAPIService : NSObject
-+ (void)searchWithTerm:(NSString *)searchTerm pageNumber:(int)pageNumber withCompletion:(kNSDictionaryCompletionHandler)completion;
++(void )searchWithTearm:(NSString * _Nonnull)searchTermParam withCompletion:(kNSDictionaryCompletionHandler _Nonnull)completionHandler;
+
++(void) searchWithTearm:(NSString * _Nonnull)searchTerm pageNumber:(int)pageNumber withCompletion:(kNSDictionaryCompletionHandler _Nonnull)completionHandler;
+
++(void) searchSimilarWithTearm:(NSString * _Nonnull)searchTermParam pageNumber:(int)pageNumberParam withCompletion:(kNSDictionaryCompletionHandler _Nonnull)completionHandler;
+
 @end

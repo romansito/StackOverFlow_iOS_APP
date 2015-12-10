@@ -162,11 +162,18 @@
                                 <rect key="frame" x="0.0" y="115" width="600" height="485"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7rF-Ce-OtB" id="79a-Vn-CFo"/>
+                                    <outlet property="delegate" destination="7rF-Ce-OtB" id="aPH-ll-Pbb"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HZr-qR-QXp">
                                 <rect key="frame" x="0.0" y="71" width="600" height="44"/>
                                 <animations/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7rF-Ce-OtB" id="tdI-r7-xZg"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <animations/>
@@ -181,6 +188,10 @@
                             <constraint firstAttribute="trailing" secondItem="HZr-qR-QXp" secondAttribute="trailing" id="xB2-Rb-hmR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="HZr-qR-QXp" id="TgP-UM-dlg"/>
+                        <outlet property="tableView" destination="fu5-J7-NVL" id="b5a-dW-qE3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNI-86-9xU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

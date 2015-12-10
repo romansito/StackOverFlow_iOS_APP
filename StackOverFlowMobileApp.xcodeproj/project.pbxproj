@@ -15,6 +15,8 @@
 		303CE97B1C17B3BE00B3D2F4 /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303CE9791C17B3BE00B3D2F4 /* SearchTableViewCell.m */; };
 		303CE97C1C17B3BE00B3D2F4 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 303CE97A1C17B3BE00B3D2F4 /* SearchTableViewCell.xib */; };
 		303CE9801C17BE9200B3D2F4 /* ImageFetchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 303CE97F1C17BE9200B3D2F4 /* ImageFetchService.m */; };
+		303CE9831C18927500B3D2F4 /* SOMyQuestionsAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 303CE9821C18927500B3D2F4 /* SOMyQuestionsAPIService.m */; };
+		303CE9861C18DF2500B3D2F4 /* SOSearchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 303CE9851C18DF2500B3D2F4 /* SOSearchSettings.m */; };
 		307C82FA1C16383C00C9B6A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C82F91C16383C00C9B6A6 /* main.m */; };
 		307C82FD1C16383C00C9B6A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307C82FC1C16383C00C9B6A6 /* AppDelegate.m */; };
 		307C83031C16383C00C9B6A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307C83011C16383C00C9B6A6 /* Main.storyboard */; };
@@ -47,6 +49,10 @@
 		303CE97A1C17B3BE00B3D2F4 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		303CE97E1C17BE9200B3D2F4 /* ImageFetchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFetchService.h; sourceTree = "<group>"; };
 		303CE97F1C17BE9200B3D2F4 /* ImageFetchService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFetchService.m; sourceTree = "<group>"; };
+		303CE9811C18927500B3D2F4 /* SOMyQuestionsAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOMyQuestionsAPIService.h; sourceTree = "<group>"; };
+		303CE9821C18927500B3D2F4 /* SOMyQuestionsAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOMyQuestionsAPIService.m; sourceTree = "<group>"; };
+		303CE9841C18DF2500B3D2F4 /* SOSearchSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSearchSettings.h; sourceTree = "<group>"; };
+		303CE9851C18DF2500B3D2F4 /* SOSearchSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSearchSettings.m; sourceTree = "<group>"; };
 		307C82F51C16383C00C9B6A6 /* StackOverFlowMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlowMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		307C82F91C16383C00C9B6A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		307C82FB1C16383C00C9B6A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +116,10 @@
 				303CE9681C178C8100B3D2F4 /* Constants.h */,
 				303CE97E1C17BE9200B3D2F4 /* ImageFetchService.h */,
 				303CE97F1C17BE9200B3D2F4 /* ImageFetchService.m */,
+				303CE9811C18927500B3D2F4 /* SOMyQuestionsAPIService.h */,
+				303CE9821C18927500B3D2F4 /* SOMyQuestionsAPIService.m */,
+				303CE9841C18DF2500B3D2F4 /* SOSearchSettings.h */,
+				303CE9851C18DF2500B3D2F4 /* SOSearchSettings.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -328,7 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				303CE96B1C178F9B00B3D2F4 /* User.m in Sources */,
+				303CE9861C18DF2500B3D2F4 /* SOSearchSettings.m in Sources */,
 				307C831A1C163CF700C9B6A6 /* SearchQuestionsViewController.m in Sources */,
+				303CE9831C18927500B3D2F4 /* SOMyQuestionsAPIService.m in Sources */,
 				307C83261C16992E00C9B6A6 /* OAuthWebViewController.m in Sources */,
 				303CE9661C178BF100B3D2F4 /* JSONRequestService.m in Sources */,
 				307C83171C1639D800C9B6A6 /* MenuTableViewController.m in Sources */,

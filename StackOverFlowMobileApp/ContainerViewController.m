@@ -11,6 +11,10 @@
 #import "SearchQuestionsViewController.h"
 #import "MyQuestionsViewController.h"
 #import "ProfileViewController.h"
+#import "SOMyQuestionsAPIService.h"
+#import "SOSearchAPIService.h"
+#import "SOServiceJSONParser.h"
+#import "Question.h"
 
 CGFloat const kBurgerOpenScreenDivider = 3.0;
 CGFloat const kBurgerOpenScreenMultiplier = 2.0;
@@ -223,6 +227,7 @@ NSTimeInterval const kTimeToSlideMenuOpen = 0.2;
 	}
 	
 }
+
 
 
 

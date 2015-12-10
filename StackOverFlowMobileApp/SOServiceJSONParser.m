@@ -56,6 +56,7 @@
 			}
 			
 			if (result != nil) {
+				NSLog(@"paresd json: %@", result.description);
 				completion(result, nil);
 				return;
 			}
