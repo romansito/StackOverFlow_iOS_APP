@@ -15,12 +15,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-cY-43L">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-cY-43L">
                         <rect key="frame" x="9" y="0.0" width="42" height="42"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="lG8-0r-P4d"/>
+                            <constraint firstAttribute="height" constant="42" id="ofb-rg-uPl"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJJ-mM-t2P">
-                        <rect key="frame" x="58" y="2" width="254" height="21"/>
+                        <rect key="frame" x="58" y="2" width="254" height="17"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="mQq-3g-CAd"/>
@@ -28,9 +32,14 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mQq-3g-CAd"/>
+                            </mask>
+                        </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEY-8o-Gd3">
-                        <rect key="frame" x="270" y="31" width="42" height="11"/>
+                        <rect key="frame" x="270" y="27" width="42" height="10"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="8"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,14 +51,37 @@
                     <constraint firstItem="XJJ-mM-t2P" firstAttribute="trailing" secondItem="aEY-8o-Gd3" secondAttribute="trailing" id="602-gf-44M"/>
                     <constraint firstItem="P2b-cY-43L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7He-YM-RAd"/>
                     <constraint firstItem="XJJ-mM-t2P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="Aks-Qi-NHo"/>
+                    <constraint firstAttribute="trailing" secondItem="XJJ-mM-t2P" secondAttribute="trailing" constant="8" id="Ayc-cU-CyQ"/>
                     <constraint firstItem="XJJ-mM-t2P" firstAttribute="leading" secondItem="P2b-cY-43L" secondAttribute="trailing" constant="8" symbolic="YES" id="BSQ-eg-o46"/>
                     <constraint firstItem="P2b-cY-43L" firstAttribute="bottom" secondItem="aEY-8o-Gd3" secondAttribute="bottom" id="JBS-hc-FCp"/>
                     <constraint firstItem="aEY-8o-Gd3" firstAttribute="top" secondItem="XJJ-mM-t2P" secondAttribute="bottom" constant="8" symbolic="YES" id="Nna-G5-9UP"/>
+                    <constraint firstItem="aEY-8o-Gd3" firstAttribute="leading" secondItem="P2b-cY-43L" secondAttribute="trailing" constant="219" id="QT9-Uu-SCj"/>
+                    <constraint firstItem="XJJ-mM-t2P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="a0k-yo-htz"/>
+                    <constraint firstItem="aEY-8o-Gd3" firstAttribute="top" secondItem="XJJ-mM-t2P" secondAttribute="bottom" constant="8" id="bV1-8D-LQx"/>
+                    <constraint firstItem="XJJ-mM-t2P" firstAttribute="leading" secondItem="P2b-cY-43L" secondAttribute="trailing" constant="7" id="cT0-85-Ohz"/>
                     <constraint firstAttribute="leadingMargin" secondItem="P2b-cY-43L" secondAttribute="leading" id="cnY-PP-JrV"/>
                     <constraint firstItem="P2b-cY-43L" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" constant="-1" id="eXy-xn-tY2"/>
                     <constraint firstItem="XJJ-mM-t2P" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="eha-5V-Cys"/>
+                    <constraint firstAttribute="trailing" secondItem="aEY-8o-Gd3" secondAttribute="trailing" constant="8" id="gLb-5N-h9e"/>
                     <constraint firstItem="P2b-cY-43L" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" constant="-278" id="omx-pd-i6o"/>
+                    <constraint firstItem="P2b-cY-43L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xS8-DH-mkb"/>
+                    <constraint firstItem="P2b-cY-43L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="z6d-UG-Ggc"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7He-YM-RAd"/>
+                        <exclude reference="JBS-hc-FCp"/>
+                        <exclude reference="cnY-PP-JrV"/>
+                        <exclude reference="eXy-xn-tY2"/>
+                        <exclude reference="omx-pd-i6o"/>
+                        <exclude reference="602-gf-44M"/>
+                        <exclude reference="Aks-Qi-NHo"/>
+                        <exclude reference="BSQ-eg-o46"/>
+                        <exclude reference="eha-5V-Cys"/>
+                        <exclude reference="Nna-G5-9UP"/>
+                        <exclude reference="QT9-Uu-SCj"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <animations/>
             <connections>

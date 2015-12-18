@@ -12,6 +12,7 @@
 #import "Question.h"
 #import "SearchTableViewCell.h"
 #import "SOSearchSettings.h"
+#import "ImageFetchService.h"
 
 @interface SearchQuestionsViewController ()<UISearchBarDelegate, UITableViewDataSource, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -54,11 +55,8 @@
 	[[self tableView] registerNib:nib forCellReuseIdentifier:@"SearchResultCell"];
 }
 
-
-
 -(void) fetchResultsForSearchTearm:(NSString*)searchTerm {
 	
-
 	[SOSearchAPIService searchWithTearm:searchTerm pageNumber:0 withCompletion:^(NSDictionary * _Nullable data, NSError * _Nullable error) {
 		if (error == nil){
 			NSLog(@"Success Requesting SOSearchAPIService SOSearchAPIService*");
@@ -82,7 +80,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+	if (self.Questions !=nil){
 	return self.Questions.count;
+	}
+	return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,6 +91,11 @@
 	SearchTableViewCell *cell = (SearchTableViewCell *) [self.tableView dequeueReusableCellWithIdentifier:@"SearchResultCell"];
 	cell.question = [self.Questions objectAtIndex:indexPath.row];
 	return cell;
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+	[self fetchResultsForSearchTearm:self.searchBar.text];
 }
 
 
