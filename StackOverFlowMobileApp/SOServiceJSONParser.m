@@ -34,11 +34,12 @@
 						NSURL *link = [[NSURL alloc] initWithString:linkURLString];
 						
 						owner = [[User alloc] initWithDisplayName:displayName profileImageURL:profileImageURL link:link reputation:reputation user_id:userID];
+
 						
 					}
 					
+					NSLog(@"fetched profile Image:%@",owner.display_name);
 					NSString *title = item[@"title"];
-					NSString *owner = item[@"owner"];
 					int questionID = (int) item[@"question_id"];
 					int score = (int) item[@"score"];
 					BOOL isAnswered = (BOOL) item[@"is_answered"];

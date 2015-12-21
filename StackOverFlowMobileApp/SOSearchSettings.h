@@ -27,8 +27,8 @@ typedef enum {
 
 +(SOSearchSettings * _Nonnull) sharedService;
 
--(NSString *) getSortParameterForUrl;
--(NSString *) getOrderParameterForUrl;
+-(NSString * _Nonnull) getSortParameterForUrl;
+-(NSString * _Nonnull) getOrderParameterForUrl;
 
 
 @end

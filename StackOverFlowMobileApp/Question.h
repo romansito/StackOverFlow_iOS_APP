@@ -23,7 +23,7 @@
 @interface Question : NSObject
 
 @property NSString *title;
-@property User *owner;
+@property (strong,nonatomic) User *owner;
 @property BOOL isAnswered;
 @property int score;
 @property int creationDate;

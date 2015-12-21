@@ -4,34 +4,44 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StackOverFlowMobileApp/SOServiceJSONParser.m"
-            timestampString = "471402873.069793"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackOverFlowMobileApp/SearchTableViewCell.m"
+            timestampString = "472428888.925337"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "+questionsArrayFromDictionary:completionHandler:"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-setupQuestion:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StackOverFlowMobileApp/SOServiceJSONParser.m"
-            timestampString = "471402873.069793"
+            filePath = "StackOverFlowMobileApp/SearchTableViewCell.m"
+            timestampString = "472429036.334193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "+questionsArrayFromDictionary:completionHandler:"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-setupQuestion:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

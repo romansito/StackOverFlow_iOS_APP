@@ -10,5 +10,5 @@
 #import "Question.h"
 
 @interface SearchTableViewCell : UITableViewCell
-@property Question *question;
+@property (strong, nonatomic) Question *question;
 @end

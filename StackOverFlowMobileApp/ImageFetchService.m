@@ -13,12 +13,12 @@
 + (void)fetchImageWithURL:(NSURL *)url completionHandler:(kNSImageCompletionHandler)completionHandler
 {
 	dispatch_queue_t imageQeue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
-	dispatch_sync(imageQeue, ^{
+	dispatch_async(imageQeue, ^{
 		NSError *error;
 		NSData *data = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&error];
 		
 		UIImage *result = [[UIImage alloc]initWithData:data];
-		dispatch_sync(dispatch_get_main_queue(), ^{
+		dispatch_async(dispatch_get_main_queue(), ^{
 			if (error == nil && data != nil) {
 				completionHandler(result, nil);
 				return ;

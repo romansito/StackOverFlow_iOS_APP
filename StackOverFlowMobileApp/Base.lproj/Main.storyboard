@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--ContainerViewController-->
@@ -16,7 +16,6 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -30,7 +29,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yOZ-1v-OSe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection headerTitle="Menu" id="GUB-dQ-EwX">
@@ -45,15 +43,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Search Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6lx-a2-cQe">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="zaJ-8P-QAP" style="IBUITableViewCellStyleDefault" id="zYL-lq-G8j">
                                         <rect key="frame" x="0.0" y="72" width="600" height="44"/>
@@ -65,15 +60,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="My Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zaJ-8P-QAP">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="rbd-CZ-aRR" style="IBUITableViewCellStyleDefault" id="eGb-OU-nm9">
                                         <rect key="frame" x="0.0" y="116" width="600" height="44"/>
@@ -85,15 +77,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rbd-CZ-aRR">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -122,16 +111,13 @@
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BWn-ox-Jyy">
                                 <rect key="frame" x="0.0" y="70" width="600" height="44"/>
-                                <animations/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Iv-Wp-uDw">
                                 <rect key="frame" x="0.0" y="114" width="600" height="486"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BWn-ox-Jyy" firstAttribute="leading" secondItem="tqD-a8-Sn7" secondAttribute="leading" id="1bo-WP-wU6"/>
@@ -166,7 +152,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3S-zi-G0x">
                                 <rect key="frame" x="180" y="109" width="240" height="255"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="255" id="9go-fh-Xr2"/>
@@ -185,15 +170,16 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3a-sD-ZpJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3a-sD-ZpJ">
                                 <rect key="frame" x="180" y="394" width="240" height="21"/>
-                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="w23-y7-lPS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="V3S-zi-G0x" firstAttribute="leading" secondItem="9aX-FV-wug" secondAttribute="leading" constant="180" id="1iu-X1-WSU"/>
@@ -209,9 +195,11 @@
                             <constraint firstItem="V3S-zi-G0x" firstAttribute="top" secondItem="dJ4-7J-25B" secondAttribute="bottom" constant="89" id="HeP-yK-OWn"/>
                             <constraint firstAttribute="trailing" secondItem="V3S-zi-G0x" secondAttribute="trailing" constant="180" id="Hri-gW-RYL"/>
                             <constraint firstItem="V3S-zi-G0x" firstAttribute="leading" secondItem="9aX-FV-wug" secondAttribute="leading" constant="180" id="Jhr-Pq-j8M"/>
+                            <constraint firstItem="K3a-sD-ZpJ" firstAttribute="top" secondItem="V3S-zi-G0x" secondAttribute="bottom" constant="30" id="Oai-AX-v0y"/>
                             <constraint firstItem="V3S-zi-G0x" firstAttribute="leading" secondItem="9aX-FV-wug" secondAttribute="leading" constant="180" id="QUD-L0-5xN"/>
                             <constraint firstItem="qU1-hG-Gbz" firstAttribute="top" secondItem="K3a-sD-ZpJ" secondAttribute="bottom" constant="185" id="SKw-Hr-edH"/>
                             <constraint firstItem="V3S-zi-G0x" firstAttribute="top" secondItem="dJ4-7J-25B" secondAttribute="bottom" constant="89" id="VH1-Oj-Z2O"/>
+                            <constraint firstItem="K3a-sD-ZpJ" firstAttribute="centerX" secondItem="9aX-FV-wug" secondAttribute="centerX" id="Vdh-0k-AVP"/>
                             <constraint firstItem="V3S-zi-G0x" firstAttribute="top" secondItem="dJ4-7J-25B" secondAttribute="bottom" constant="89" id="VoC-NC-WSh"/>
                             <constraint firstItem="qU1-hG-Gbz" firstAttribute="top" secondItem="K3a-sD-ZpJ" secondAttribute="bottom" constant="185" id="WPd-8i-nmV"/>
                             <constraint firstItem="K3a-sD-ZpJ" firstAttribute="top" secondItem="V3S-zi-G0x" secondAttribute="bottom" constant="30" id="bKm-oF-mjO"/>
@@ -276,7 +264,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fu5-J7-NVL">
                                 <rect key="frame" x="0.0" y="115" width="600" height="485"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="7rF-Ce-OtB" id="79a-Vn-CFo"/>
@@ -285,14 +272,12 @@
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HZr-qR-QXp">
                                 <rect key="frame" x="0.0" y="71" width="600" height="44"/>
-                                <animations/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="7rF-Ce-OtB" id="tdI-r7-xZg"/>
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.0" green="0.70432569820000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fu5-J7-NVL" secondAttribute="trailing" id="FxZ-Oj-019"/>
@@ -320,7 +305,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5mj-qN-EOi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zOW-OB-uAg">
@@ -329,9 +313,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zOW-OB-uAg" id="8gb-Ug-0dW">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </tableViewCellContentView>
-                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

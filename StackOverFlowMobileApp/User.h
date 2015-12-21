@@ -27,6 +27,7 @@
 @property NSURL *profile_image;
 @property NSString *display_name;
 @property NSURL *link;
+@property UIImage *imageProfile;
 
 -(id)initWithDisplayName:(NSString*)display_name profileImageURL:(NSURL*)profile_image link:(NSURL*)link reputation:(int)reputation user_id:(int)user_id;
 

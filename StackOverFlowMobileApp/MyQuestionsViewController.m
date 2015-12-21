@@ -12,6 +12,9 @@
 #import "SOMyQuestionsAPIService.h"
 #import "ImageFetchService.h"
 #import "SOMyQuestionsAPIService.h"
+#import "JSONRequestService.h"
+#import "SOSearchAPIService.h"
+
 
 @interface MyQuestionsViewController ()<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -44,9 +47,18 @@
 	UINib *nib = [UINib nibWithNibName:@"SearchResultTableViewCell" bundle:nil];
 	[[self tableView] registerNib:nib forCellReuseIdentifier:@"SearchResultTableViewCell"];
 }
-- (void)setupFetchedMyQuestions:(NSString*)searchTerm
-{
-	//
+//- (void)setupFetchedMyQuestions:(NSString*)searchTerm
+//{
+//	SOMyQuestionsAPIService fetchMyQuestionswithCompletion:^(NSDictionary * _Nullable data, NSError * _Nullable error) {
+//		if (error == nil) {
+//			NSLog(@"Success fetching MyQuestions");
+//			
+//		}
+//	}
+//}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return  nil;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

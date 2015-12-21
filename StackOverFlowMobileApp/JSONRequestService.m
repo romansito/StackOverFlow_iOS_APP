@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 
 @implementation JSONRequestService
+
 + (void)getRequestWithURL:(NSString *)url parameters:(NSDictionary *)parameters withCompletion:(kNSDataCompletionHandler)completion {
 	
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

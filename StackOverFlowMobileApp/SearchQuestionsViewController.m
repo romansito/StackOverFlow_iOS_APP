@@ -14,7 +14,7 @@
 #import "SOSearchSettings.h"
 #import "ImageFetchService.h"
 
-@interface SearchQuestionsViewController ()<UISearchBarDelegate, UITableViewDataSource, UISearchBarDelegate>
+@interface SearchQuestionsViewController ()<UISearchBarDelegate, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
@@ -53,6 +53,9 @@
 {
 	UINib *nib = [UINib nibWithNibName:@"SearchTableViewCell" bundle:nil];
 	[[self tableView] registerNib:nib forCellReuseIdentifier:@"SearchResultCell"];
+	
+	self.tableView.estimatedRowHeight = 100;
+	self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 -(void) fetchResultsForSearchTearm:(NSString*)searchTerm {
@@ -60,6 +63,7 @@
 	[SOSearchAPIService searchWithTearm:searchTerm pageNumber:0 withCompletion:^(NSDictionary * _Nullable data, NSError * _Nullable error) {
 		if (error == nil){
 			NSLog(@"Success Requesting SOSearchAPIService SOSearchAPIService*");
+			
 			[SOServiceJSONParser questionsArrayFromDictionary:data completionHandler:^(NSArray * _Nullable data, NSError * _Nullable error) {
 				if (error == nil && data != nil) {
 					NSLog(@"\n\nSuccess Parsing SearchGetRequest: %@\n",data.description);
@@ -88,15 +92,45 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	SearchTableViewCell *cell = (SearchTableViewCell *) [self.tableView dequeueReusableCellWithIdentifier:@"SearchResultCell"];
-	cell.question = [self.Questions objectAtIndex:indexPath.row];
+	SearchTableViewCell *cell = (SearchTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"SearchResultCell" forIndexPath:indexPath];
+	Question *rowQuestion = (Question *)[self.Questions objectAtIndex:indexPath.row];
+	NSLog(@"questions name is s s s s  s  %@:", rowQuestion.owner.display_name);
+	[cell setQuestion:rowQuestion];
 	return cell;
 }
 
+
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-	[self fetchResultsForSearchTearm:self.searchBar.text];
+	NSLog(@"%@", searchBar.text);
+	NSString *searchTerm = [[self.searchBar.text stringByAppendingString:@" "] stringByAppendingString:self.searchBar.text];
+	
+	[self fetchResultsForSearchTearm:searchTerm];
+	[self.tableView reloadData];
+	[searchBar resignFirstResponder];
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
